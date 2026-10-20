@@ -162,7 +162,7 @@ class RFQManager {
     }
     msg += `• Desired Delivery: Next Available Route Van\n`;
     msg += `• Requesting: Best Super Stockist Wholesale Rates & Scheme Margins\n\n`;
-    msg += `_Sent via Kathirava Agency B2B Portal (Kappalur SIDCO Hub)_`;
+    msg += `_Sent via Kathirava Agency B2B Portal (S S Colony, Madurai Hub)_`;
 
     return msg;
   }

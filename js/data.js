@@ -9,11 +9,13 @@ const KATHIRAVA_CONFIG = {
   tagline: "Authorized Super Stockist & Regional Distribution Hub",
   principals: ["Pidilite Industries", "Havells India"],
   primaryLocation: "Madurai, Tamil Nadu",
-  warehouseAddress: "Plot No. 42-B, SIDCO Industrial Estate, Kappalur Bypass, Madurai - 625008, Tamil Nadu",
-  phoneNumbers: ["+91 94432 18765", "+91 98421 54321"],
-  whatsappNumber: "919443218765",
+  warehouseAddress: "56, Ponmeni Narayanan St, S S Colony, Madurai - 625016, Tamil Nadu",
+  plusCode: "W3CX+V4 S S Colony, Tamil Nadu",
+  googleMapsUrl: "https://maps.app.goo.gl/TrnGW7MD6Ddo4Dvk7",
+  phoneNumbers: ["+91 98650 11368", "098650 11368"],
+  whatsappNumber: "919865011368",
   email: "orders@kathiravaagency.com",
-  operatingHours: "Monday - Saturday: 8:30 AM - 8:30 PM",
+  operatingHours: "Monday - Saturday: 10:00 AM - 8:00 PM",
   establishedYear: "2009",
   stats: {
     experienceYears: "15+",
@@ -506,7 +508,7 @@ const ROUTE_SCHEDULE = [
   {
     day: "Monday to Saturday (Twice Daily)",
     route: "Madurai Metro & Suburban Distribution",
-    stops: ["Simmakkal Hardware Market", "Munichalai", "Villapuram", "K.K. Nagar", "Anna Nagar", "Ellis Nagar", "Kappalur SIDCO", "Thirunagar"],
+    stops: ["Simmakkal Hardware Market", "Munichalai", "Villapuram", "K.K. Nagar", "Anna Nagar", "Ellis Nagar", "S S Colony & Ponmeni", "Thirunagar"],
     vehicle: "Dedicated Multi-Drop Intra-City Fleet (3 Vans)",
     leadTime: "Morning Run: Order by 9:30 AM ➔ Delivery by 2:00 PM | Evening Run: Order by 2:30 PM ➔ Delivery by 7:30 PM"
   }
@@ -525,7 +527,7 @@ const DEALER_BENEFITS = [
   },
   {
     title: "Guaranteed 24-48 Hr Dispatch",
-    desc: "Massive 18,000 sq ft central warehouse in Kappalur with 2,500+ ready SKUs so your shop shelves are never empty.",
+    desc: "Central wholesale distribution hub in Madurai with 2,500+ ready SKUs so your shop shelves are never empty.",
     icon: "truck"
   },
   {
