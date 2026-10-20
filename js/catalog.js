@@ -171,7 +171,8 @@ class CatalogController {
     items.forEach(product => {
       const isPidilite = product.brand === "pidilite";
       const brandClass = isPidilite ? "brand-pidilite" : "brand-havells";
-      const brandBadgeText = isPidilite ? "Pidilite Industries" : "Havells India";
+      const brandBadgeText = isPidilite ? "Pidilite" : "Havells";
+      const showSubBrand = product.subBrand && product.subBrand.toLowerCase() !== brandBadgeText.toLowerCase();
       const initialPack = this.selectedPackByProduct[product.id] || product.packaging[0];
 
       // Build options for packaging select
@@ -192,7 +193,7 @@ class CatalogController {
               <span class="badge ${isPidilite ? 'badge-pidilite' : 'badge-havells'}">
                 ${brandBadgeText}
               </span>
-              <span class="badge badge-subbrand">${product.subBrand}</span>
+              ${showSubBrand ? `<span class="badge badge-subbrand">${product.subBrand}</span>` : ""}
             </div>
             <span class="product-badge-accent" style="color: ${product.badgeColor}; border-color: ${product.badgeColor}40">
               ${product.badge}
@@ -281,8 +282,9 @@ class CatalogController {
     if (!product || !this.productModal) return;
 
     const isPidilite = product.brand === "pidilite";
-    const brandBadgeText = isPidilite ? "Pidilite Industries Division" : "Havells India Division";
+    const brandBadgeText = isPidilite ? "Pidilite Division" : "Havells Division";
     const badgeClass = isPidilite ? "badge-pidilite" : "badge-havells";
+    const showSubBrand = product.subBrand && product.subBrand.toLowerCase() !== (isPidilite ? "pidilite" : "havells");
 
     const packagingBadges = product.packaging.map(p => 
       `<span class="pack-badge-pill">${p}</span>`
@@ -302,7 +304,7 @@ class CatalogController {
         <div class="modal-product-header">
           <div class="modal-brand-row">
             <span class="badge ${badgeClass}">${brandBadgeText}</span>
-            <span class="badge badge-subbrand">${product.subBrand}</span>
+            ${showSubBrand ? `<span class="badge badge-subbrand">${product.subBrand}</span>` : ""}
             <span class="modal-sku-tag">SKU: ${product.sku}</span>
           </div>
           <h2 class="modal-product-title">${product.name}</h2>
